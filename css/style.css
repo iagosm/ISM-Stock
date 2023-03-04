@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+body{
+    background: #121214;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    overflow-y: hidden;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img{
+    width: 50px;
+    margin-top: 42px;
+    /* margin-bottom: 45px; */
+}
+
+form{
+    /* padding: 30px; */
+    background-color: #202024;
+    border-radius: 6px;
+    padding: 0px 12px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column
+}
+
+form div label{
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+form div input{
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 20px;
+    width: 270px;
+}
+
+input::placeholder{
+    color: #202024;
+    font-size: 16px;
+}
+
+.form-group{
+    display: flex;
+    margin: 30px;
+}
+
+button{
+    background-color: #5E17EB;
+    width: 100%;
+    cursor: pointer;
+    height: 40px;
+    width: 310px;
+    padding:  10px 110px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+button a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.link-cadastrar{
+    width: 92%;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+    font-weight: 300px;
+    margin-top: 7px;
+    gap: 3px;
+    margin-bottom: 54px;
+}
+
+.link-login a, .link-cadastrar a{
+    color: #5E17EB;
+    text-decoration: none   ;
+}
+
+button {
+    font-size: 20px;
+}
+
+.link-login {
+    width: 69%;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+    font-weight: 300px;
+    margin-top: 7px;
+    gap: 3px;
+    margin-bottom: 54px;
+}
+
+.form-container-cadastrar{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container-cadastrar form{
+    min-width: 800px;
+}
+
+.form-container-cadastrar p{
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 63px;
+    margin-left: 30px;
+    justify-content: flex-start;
+}
