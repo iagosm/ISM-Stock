@@ -3,7 +3,7 @@
 
 ?>
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -18,28 +18,28 @@
     <div class="form-container-cadastrar">
         <form action="#" method="POST">
             <p>Preencha os campos abaixo</p>
-            <div class="form-group">
-                <label for="email">Nome</label>
+            <div class="form-group div-cadastro">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form-group div-cadastro">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
+            </div>
+
+            <div class="form-group div-cadastro">
+                <label for="email">E-mail</label>
                 <input type="email" name="email" placeholder="Digite seu E-mail" required>
             </div>
-            <div class="form-group">
-                <label for="senha">Sobrenome</label>
-                <input type="password" name="senha" placeholder="Digite sua senha" required>
-            </div>
 
-            <div class="form-group">
-                <label for="senha">E-mail</label>
-                <input type="password" name="senha" placeholder="Digite sua senha" required>
-            </div>
-
-            <div class="form-group">
+            <div class="form-group div-cadastro">
                 <label for="senha">Senha</label>
                 <input type="password" name="senha" placeholder="Digite sua senha" required>
             </div>
 
-            <div class="form-group">
-                <label for="senha">Confirmar senha</label>
-                <input type="password" name="senha" placeholder="Digite sua senha" required>
+            <div class="form-group div-cadastro">
+                <label for="confirmarsenha">Confirmar senha</label>
+                <input type="password" name="confirmarsenha" placeholder="Confirme sua senha" required>
             </div>
             
             <button type="submit" class="btn-cadastrar"><a href="">Cadastrar</a></button>
