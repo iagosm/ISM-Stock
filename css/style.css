@@ -210,7 +210,7 @@ header h2{
 
 header p{
     margin-top: 50px;
-    margin-bottom: 90px;
+    margin-bottom: 62px;
     padding-bottom: 20px;
  }
 
@@ -233,7 +233,8 @@ header h2, header p{
     width: 800px;
 }
 
-.dashboard-title{
+.dashboard-title,
+.forn-title{
     text-align: center;
     font-size: 36px;    
     margin-top: 50px;
@@ -270,11 +271,34 @@ table{
 }
 
 
-.dashboard-btn a{
+.dashboard-btn a,
+.dashboard-forn a{
     text-decoration: none;
     color: #fff;
     font-size: 20px;
 }
+
+/* Fornecedor */
+.forn-title::after{
+    content: "";
+    width: 450px;
+    margin: 0 auto;
+    border-bottom: 2px solid white;
+    display: block;
+    padding-bottom: 20px;
+    margin-bottom: 22px;
+}
+
+.dashboard-forn{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.forn-cadastrar a img{
+    margin-right: 4px;
+}
+
 
 
 /* Media */

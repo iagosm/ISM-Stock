@@ -30,7 +30,7 @@
                 
             </div>
             <div class="menu-itens">
-                <a href="">
+                <a href="fornecedor.php">
                 <p>Fornecedor</p>
                 <img src="assets/fornecedor.svg" alt="">
                 </a>
