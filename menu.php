@@ -25,7 +25,7 @@
         <div class="menu-itens">
                 <a href="dashboard.php">
                 <p>Produto</p>
-                <img src="assets/produtos.svg" alt="">
+                <img src="assets/estoque.svg" alt="">
                 </a>
                 
             </div>
@@ -37,7 +37,7 @@
                 
             </div>
             <div class="menu-itens">
-                <a href="">
+                <a href="categoria.php">
                 <p>Categoria</p>
                 <img src="assets/categoria.svg" alt="">
                 </a>
@@ -45,16 +45,9 @@
             </div>
         </div>
         <!-- side right -->
-        <div class="menu-options">
+        <div class="menu-options2">
         <div class="menu-itens">
-                <a href="">
-                <p>Estoque</p>
-                <img src="assets/estoque.svg" alt="">
-                </a>
-                
-            </div>
-            <div class="menu-itens">
-                <a href="">
+                <a href="saidas.php">
                 <p>Saídas</p>
                 <img src="assets/transferencia.svg" alt="">
                 </a>
