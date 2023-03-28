@@ -4,7 +4,7 @@ require("conn.php");
 require("url.php");
 
 $data = $_POST;
-if(!empty($data["type"] == "create")){
+if(!empty($data["type"] == "createcategoria")){
     $nome = $data["nome"];
     
     $sql = "INSERT INTO categoria (nome) VALUES (:nome)";
@@ -14,7 +14,7 @@ if(!empty($data["type"] == "create")){
 
     try{
         $query->execute();
-        
+        header("Location: ../dashboard.php");
     }catch(PDOException $e){
         $error = $e->getMessage();
         echo "Error: $e";

@@ -1,6 +1,9 @@
 <?php
   require_once('config/conn.php');
-  require_once('config/produto.php')
+  require_once('config/produto.php');
+
+
+  session_start();
 
 ?>
 <!DOCTYPE html>

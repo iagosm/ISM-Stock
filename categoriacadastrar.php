@@ -1,5 +1,7 @@
 <?php
 
+    require_once("config/produto.php");
+
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -15,8 +17,8 @@
 
 <body>
     <div class="form-container">
-        <form action="config/categoria.php" method="POST">
-            <input type="hidden" name="type" value="create">
+        <form action="config/produto.php" method="POST">
+            <input type="hidden" name="type" value="createcategoria">
             <div class="form-group">
                 <label for="nome">Categoria</label>
                 <input type="text" name="nome" placeholder="Digite o nome da Categoria" required>

@@ -28,7 +28,7 @@ require_once("config/url.php");
             </div>
             <div class="form-group-select div-cadastro">
                 <label for="sku">SKU</label>
-                <input type="text" name="sku" placeholder="Digite o SKU do produto" required>
+                <input type="text" name="sku" placeholder="Digite o SKU do produto" required maxlength="9">
             </div>
 
             <div class="form-group-select div-cadastro">
@@ -41,10 +41,9 @@ require_once("config/url.php");
                 <label for="categoria">Categoria</label>
                 <select name="categoria" id="categoria">
                     <option select>Selecione a categoria</option>
-                    <option value="1">Hardware</option>
-                    <option value="">Software</option>
-                    <option value="">Media</option>
-                    <option value="">Perifericos</option>
+                    <?php foreach($categoria as $category): ?>
+                    <option value="<?= $category["id"]?>"><?=$category["nome"] ?></option>
+                    <?php endforeach; ?>
                 </select>
             </div>
 

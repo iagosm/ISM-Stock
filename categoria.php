@@ -1,3 +1,9 @@
+<?php
+
+  require_once("config/produto.php");
+
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -32,27 +38,19 @@
               </tr>
             </thead>
             <tbody>
+              <?php foreach($categoria as $category): ?>
               <tr class="">
-                <th scope="row">Hyperx</th>
-                <td>
-                  <a href="" class="actions"><img src="assets/olho.svg" alt=""></a>
-                  <a href="" class="actions"><img src="assets/update.svg" alt=""></a>
+                <th scope="row"><?=$category["nome"]?></th>
+                <td class="actions">
+                  <a href="editcategoria.php?nome=<?= $category["nome"] ?>&?id=<?= $category["id"]?>" class="actions"><img src="assets/update.svg" alt=""></a>
+                  <form action="config/produto.php" method="POST" class="delete-form">
+                    <input type="hidden" name="type" value="deletecategoria">
+                    <input type="hidden" name="nome" value="<?= $category["nome"]?>">
+                    <button type="submit" class="delete-btn" id="delete"><img src="assets/delete.svg" alt=""></button>
+                  </form>
                 </td>
               </tr>
-              <tr class="">
-                <th scope="">Logitech</th>
-                <td>
-                  <a href="" class="actions"><img src="assets/olho.svg" alt=""></a>
-                  <a href="" class="actions"><img src="assets/update.svg" alt=""></a>
-                </td>
-              </tr>
-              <tr class="">
-                <th scope="row">Razer</th>
-                <td>
-                  <a href="" class="actions"><img src="assets/olho.svg" alt=""></a>
-                  <a href="" class="actions"><img src="assets/update.svg" alt=""></a>
-                </td>
-              </tr>
+              <?php endforeach; ?>
             </tbody>
           </table>
           </div>

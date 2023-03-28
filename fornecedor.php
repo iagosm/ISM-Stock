@@ -1,3 +1,7 @@
+<?php
+
+  require_once("config/produto.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -35,36 +39,18 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="">
-                <th scope="row">Hyperx</th>
-                <td>teste@gmail.com</td>
-                <td>99 9999-9999</td>
-                <td>João Antonio</td>
+              <?php foreach($fornecedor as $forn):?>
+              <tr>
+                <td><?= $forn["nome"] ?></td>
+                <td><?= $forn["email"] ?></td>
+                <td><?= $forn["telefone"] ?></td>
+                <td><?= $forn["responsavel"] ?></td>
                 <td>
                   <a href="" class="actions"><img src="assets/olho.svg" alt=""></a>
                   <a href="" class="actions"><img src="assets/update.svg" alt=""></a>
                 </td>
               </tr>
-              <tr class="">
-                <th scope="row">Logitech</th>
-                <td>teste1@gmail.com</td>
-                <td>99 9999-9999</td>
-                <td>João Antonio</td>
-                <td>
-                  <a href="" class="actions"><img src="assets/olho.svg" alt=""></a>
-                  <a href="" class="actions"><img src="assets/update.svg" alt=""></a>
-                </td>
-              </tr>
-              <tr class="">
-                <th scope="row">Razer</th>
-                <td>teste3@gmail.com</td>
-                <td>99 9999-9999</td>
-                <td>João Antonio</td>
-                <td>
-                  <a href="" class="actions"><img src="assets/olho.svg" alt=""></a>
-                  <a href="" class="actions"><img src="assets/update.svg" alt=""></a>
-                </td>
-              </tr>
+              <?php endforeach; ?>
             </tbody>
           </table>
           </div>

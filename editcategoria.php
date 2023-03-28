@@ -1,5 +1,5 @@
 <?php
-
+require_once("config/produto.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -15,10 +15,12 @@
 
 <body>
     <div class="form-container">
-        <form action="#" method="POST">
+        <form action="config/produto.php" method="POST">
             <div class="form-group">
-                <label for="email">Categoria</label>
-                <input type="email" name="email" placeholder="Digite o nome da Categoria" required value="<?= $categoria['nome']?>">
+                <input type="hidden" name="type" value="editcategory">
+                <input type="hidden" name="id" value="<?= $categorias["id"]?>">
+                <label for="nome">Categoria</label>
+                <input type="text" name="nome" placeholder="Digite o nome da Categoria" required value="<?= $categorias["nome"]?>">
             </div>
             
             <button type="submit"><a href="">Cadastrar</a></button>
